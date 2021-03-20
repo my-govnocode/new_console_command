@@ -4,5 +4,6 @@ include __DIR__ . DIRECTORY_SEPARATOR .'vendor' . DIRECTORY_SEPARATOR . 'autoloa
 
 $app = new \Symfony\Component\Console\Application('demo application');
 $app->add(new \App\SayHello());
+$app->add(new \App\MultipleLineOutput());
 
 $app->run();
